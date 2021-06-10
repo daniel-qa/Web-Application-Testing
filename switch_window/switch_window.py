@@ -28,7 +28,7 @@ def switch_new_windows(driver,before_window_handle ):
 if __name__ == '__main__':
   
     url="xx.xx.xx.xx"
-		driver = webdriver.Firefox()
+    driver = webdriver.Firefox()
     driver.get(url)
     
     #記住現在窗口
