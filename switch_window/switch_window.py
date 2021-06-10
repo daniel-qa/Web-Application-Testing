@@ -32,7 +32,6 @@ if __name__ == '__main__':
     driver.get(url)
     
     #記住現在窗口
-		nowhandle = driver.current_window_handle				
-			
-		# 切換成新分頁
-		switch_new_windows(driver,nowhandle)
+    nowhandle = driver.current_window_handle				
+    # 切換成新分頁
+    switch_new_windows(driver,nowhandle)
