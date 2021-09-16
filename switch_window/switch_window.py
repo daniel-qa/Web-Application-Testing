@@ -2,6 +2,7 @@
 # Switch new windows , (限用只有兩個 Windows 的情況)
 def switch_new_windows(driver,before_window_handle ):
 	
+	sleep(1) # 等待開新視窗
 	nowhandle = before_window_handle
 	#記住點擊後窗口
 	nowhandle2 = driver.current_window_handle
