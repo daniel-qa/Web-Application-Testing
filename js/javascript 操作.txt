@@ -1,0 +1,21 @@
+#js設定值
+driver.execute_script('var x= document.getElementsByClassName("char-field");x[0].innerHTML="1";')
+driver.execute_script('var x= document.getElementsByClassName("ivu-input");x[0].value="hello";')
+
+#  js設定屬性值
+setAttribute(qualifiedName, value)
+
+element.setAttribute(name, value);    # name : 屬性名稱
+
+# 取得元件再設定屬性值
+.getElementsByTagName('option')[0].setAttribute('value', '500')
+
+// 顯示 _blank
+    alert(foo.getAttribute('target'));
+
+
+#檢查個數
+driver.execute_script('var x= document.getElementsByClassName("char-field");alert(x.length);')
+
+el.innerHTML
+driver.execute_script('var x= document.getElementsByClassName("char-field");alert(x[0].innerHTML);')
