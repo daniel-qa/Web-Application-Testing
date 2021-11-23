@@ -1,12 +1,15 @@
+import time
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support.expected_conditions import presence_of_element_located
-from time import sleep
+
+driver = webdriver.Firefox()
+url = "https://google.com"
+driver.get(url)
+time.sleep(5)
+driver.close()
 
 
-with webdriver.Firefox() as driver:
-	driver.get("http://baidu.com")
-	sleep(5)
+
+# with webdriver.Firefox() as driver:
+#	driver.get("http://baidu.com")
+#	sleep(5)
 	
