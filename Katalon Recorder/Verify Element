@@ -1,0 +1,1 @@
+verifyElementPresent | xpath=//span[text()='七年七班']
