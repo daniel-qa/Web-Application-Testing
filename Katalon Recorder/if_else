@@ -1,0 +1,19 @@
+open | https://katalon-test.s3.amazonaws.com/demo-aut/dist/html/form.html | |
+# | This will store false in the variable IsTextPresent | |
+storeValue | id=first-name | textValue |
+if | "${textValue}" == "" | |
+store | false | IsTextPresent |
+else | | |
+store | true | IsTextPresent |
+endIf | | |
+echo | IsTextPresent = ${IsTextPresent} | |
+# | This will store true in the variable IsTextPresent | |
+type | id=first-name | Hello World |
+storeValue | id=first-name | textValue |
+if | "${textValue}" == "" | |
+store | false | IsTextPresent |
+else | | |
+store | true | IsTextPresent |
+endIf | | |
+echo | IsTextPresent = ${IsTextPresent} | |
+This demonstrates the if...else...endIf statement twice. First run with empty text and second run with text
