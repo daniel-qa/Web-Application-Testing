@@ -1,0 +1,5 @@
+| store | https://www.google.com | url |
+| echo | ${url} | |
+| open | ${url} | |
+
+# 文字需要用 store 來儲存，變數用 storeEval
