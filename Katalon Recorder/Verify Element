@@ -1,3 +1,7 @@
 
-verifyElementPresent | xpath=//span[text()='七年七班']
+# 驗證 DOM 是否存在
+| verifyElementPresent | xpath=//span[text()='七年七班']
 
+
+# 驗證 DOM Text
+| verifyText | id=gender-error | This field is required. | 
