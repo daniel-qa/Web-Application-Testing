@@ -2,4 +2,4 @@ storeEval | 1 | a
 storeEval | a+1 | b
 echo | b= ${b} | 
 
-# 必須在 Run Test Suit 的執行狀態，輸出才能看的到效果
+# 必須在 Run Test Case 的執行狀態，輸出才能看的到效果
