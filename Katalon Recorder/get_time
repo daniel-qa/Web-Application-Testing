@@ -1,0 +1,3 @@
+| storeEval | new Date().getMinutes().toString() | time1
+
+| echo | ${time1} |　｜
