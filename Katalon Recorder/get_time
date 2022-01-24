@@ -1,4 +1,4 @@
-| storeEval | new Date().getMinutes().toString() | time1
+| storeEval | new Date().getHours().toString() | time1
 
 | echo | ${time1} |　｜
 
