@@ -2,6 +2,10 @@
 
 | echo | ${time1} |　｜
 
+| storeEval | new Date().getMinutes().toString() | time2
+
+| echo | ${time2} |　｜
+
 
 
 
