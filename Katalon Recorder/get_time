@@ -1,3 +1,12 @@
 | storeEval | new Date().getMinutes().toString() | time1
 
 | echo | ${time1} |　｜
+
+
+
+
+
+
+
+＃　參考　Method
+https://www.w3schools.com/jsref/jsref_getdate.asp
