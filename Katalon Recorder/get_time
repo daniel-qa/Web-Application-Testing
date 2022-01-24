@@ -6,6 +6,8 @@
 
 | echo | ${time2} |　｜
 
+| storeEval | ${time1}${time2} | Msg 
+
 
 
 
