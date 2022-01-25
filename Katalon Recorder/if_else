@@ -1,3 +1,14 @@
+storeEval | 3 | i
+if | i == 1 |
+echo | '1' |
+else |  |
+echo | 'i != 1 '  |
+endif | |
+
+
+
+##################################################################
+
 open | https://katalon-test.s3.amazonaws.com/demo-aut/dist/html/form.html | |
 # | This will store false in the variable IsTextPresent | |
 storeValue | id=first-name | textValue |
