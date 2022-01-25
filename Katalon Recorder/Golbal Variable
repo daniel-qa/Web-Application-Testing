@@ -1,0 +1,15 @@
+
+在 Profiles，新增 Profile 
+
+新增需要的 Profile 變數
+
+按右鍵，使用 「 use this in test case」的功能
+
+選取需要的 TestCase
+
+一定會是這種型式
+
+| echo  | ${GlobalVariable.myvar} | 
+
+
+https://www.katalon.com/resources-center/blog/recorder-5-6-release/
