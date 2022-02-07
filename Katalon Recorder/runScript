@@ -1,0 +1,3 @@
+runScript | window.scrollTo(0, 4000); |
+runScript | return window.$.fn.jquery | jQueryVersion
+echo | ${jQueryVersion} |
