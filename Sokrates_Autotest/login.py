@@ -21,10 +21,7 @@ import logging
 
 # Login
 def login(driver,url="https://sokrates.teammodel.org/exhibition/tbavideo#/"):
-		
-	#driver = webdriver.Firefox()
-	#url="https://sokrates.teammodel.org/exhibition/tbavideo#/"
-	
+
 	driver.get(url)
 	
 	# Login button	
