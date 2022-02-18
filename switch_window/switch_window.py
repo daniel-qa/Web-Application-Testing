@@ -24,8 +24,7 @@ def switch_new_windows(driver,before_window_handle ):
 				#print('Already switch new window!')
 	else:
 		print("current windows is new windows")
-   
-    
+		
 if __name__ == '__main__':
   
     url="xx.xx.xx.xx"
