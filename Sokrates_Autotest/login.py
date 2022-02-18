@@ -21,8 +21,7 @@ import logging
 
 # Login
 def login(driver,url="https://sokrates.teammodel.org/exhibition/tbavideo#/"):
-	
-	
+		
 	#driver = webdriver.Firefox()
 	#url="https://sokrates.teammodel.org/exhibition/tbavideo#/"
 	
@@ -47,7 +46,6 @@ def login(driver,url="https://sokrates.teammodel.org/exhibition/tbavideo#/"):
 	
 	# check login status
 	#driver.find_element_by_xpath("//i[contains(@class,'ivu-icon-person')]").is_displayed()
-
 
 if __name__== "__main__":
 	#print("This is main function called")
