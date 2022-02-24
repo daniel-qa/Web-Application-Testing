@@ -20,7 +20,8 @@ def switch_new_windows(driver,before_window_handle ):
 		for handle in allhandles:
 			if( handle != nowhandle):
 				#print('swith to new windows!')
-				driver.switch_to_window(handle)
+				#driver.switch_to_window(handle) # Deprecation
+				driver.switch_to.window(driver.window_handles[-1])
 				#print('Already switch new window!')
 	else:
 		print("current windows is new windows")
