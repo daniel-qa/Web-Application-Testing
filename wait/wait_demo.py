@@ -20,3 +20,7 @@ driver.get('https://www.baidu.com/')
 baidu_input = (By.ID, 'kw')
 WebDriverWait(driver,10).until(EC.visibility_of_element_located(baidu_input))
 
+
+# 直接抓取 element
+element=WebDriverWait(driver,30).until(EC.element_to_be_clickable((By.ID,'q1A')))
+element.click()
