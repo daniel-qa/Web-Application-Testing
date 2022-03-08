@@ -1,0 +1,18 @@
+
+dragAndDrop | css=.upper-canvas | +200,+100
+
+由 object 的位置，拖放至相業位置
+由於是電腦，所以不是直線，而且先走45度對角線，再走水平線
+繪制時，要特別注意
+
+
+
+
+
+
+
+
+
+
+Ref:
+https://docs.katalon.com/katalon-recorder/docs/selenese-selenium-ide-commands-reference.html
