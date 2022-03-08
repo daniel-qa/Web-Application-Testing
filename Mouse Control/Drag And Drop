@@ -6,7 +6,11 @@ dragAndDrop | css=.upper-canvas | +200,+100
 繪制時，要特別注意
 
 
+dragAndDrop(locator, movementsString)
+Arguments:
 
+*locator - an element locator
+*movementsString - offset in pixels from the current location to which the element should be moved, e.g., "+70,-300" 
 
 
 
