@@ -9,12 +9,13 @@ driver.quit()
 
 # 顯示等待
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.expected_conditions import visibility_of_element_located
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.expected_conditions import visibility_of_element_located
+from selenium.webdriver.support.expected_conditions import element_to_be_clickable 
 
 # 直接抓取 element
-element=WebDriverWait(driver,30).until(EC.element_to_be_clickable((By.ID,'q1A')))
+element=WebDriverWait(driver,30).until(element_to_be_clickable((By.ID,'q1A')))
 element.click()
 
 element =WebDriverWait(driver, 60).until(visibility_of_element_located((By.CSS_SELECTOR, ".my-sokrates-menu")))
@@ -25,7 +26,7 @@ WebDriverWait(driver, 60).until(visibility_of_element_located((By.ID, 'grView'))
 
 driver.get('https://www.baidu.com/')
 baidu_input = (By.ID, 'kw')
-WebDriverWait(driver,10).until(EC.visibility_of_element_located(baidu_input))
+WebDriverWait(driver,10).until(visibility_of_element_located(baidu_input))
 
 
 
