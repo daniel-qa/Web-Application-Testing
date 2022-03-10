@@ -1,0 +1,73 @@
+#coding=utf-8
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
+
+base_url = "http://www.baidu.com"
+driver = webdriver.Firefox()
+driver.implicitly_wait(5)
+'''隱式等待和顯示等待都存在時，超時時間取二者中較大的'''
+locator = (By.ID,'kw')
+driver.get(base_url)
+
+WebDriverWait(driver,10).until(EC.title_is(u"百度一下，你就知道"))
+'''判斷title,返回布林值'''
+
+WebDriverWait(driver,10).until(EC.title_contains(u"百度一下"))
+'''判斷title，返回布林值'''
+
+WebDriverWait(driver,10).until(EC.presence_of_element_located((By.ID,'kw')))
+'''判斷某個元素是否被加到了dom樹裡，並不代表該元素一定可見，如果定位到就返回WebElement'''
+
+WebDriverWait(driver,10).until(EC.visibility_of_element_located((By.ID,'su')))
+'''判斷某個元素是否被新增到了dom裡並且可見，可見代表元素可顯示且寬和高都大於0'''
+
+WebDriverWait(driver,10).until(EC.visibility_of(driver.find_element(by=By.ID,value='kw')))
+'''判斷元素是否可見，如果可見就返回這個元素'''
+
+WebDriverWait(driver,10).until(EC.presence_of_all_elements_located((By.CSS_SELECTOR,'.mnav')))
+'''判斷是否至少有1個元素存在於dom樹中，如果定位到就返回列表'''
+
+WebDriverWait(driver,10).until(EC.visibility_of_any_elements_located((By.CSS_SELECTOR,'.mnav')))
+'''判斷是否至少有一個元素在頁面中可見，如果定位到就返回列表'''
+
+WebDriverWait(driver,10).until(EC.text_to_be_present_in_element((By.XPATH,"//*[@id='u1']/a[8]"),u'設定'))
+'''判斷指定的元素中是否包含了預期的字串，返回布林值'''
+
+WebDriverWait(driver,10).until(EC.text_to_be_present_in_element_value((By.CSS_SELECTOR,'#su'),u'百度一下'))
+'''判斷指定元素的屬性值中是否包含了預期的字串，返回布林值'''
+
+#WebDriverWait(driver,10).until(EC.frame_to_be_available_and_switch_to_it(locator))
+'''判斷該frame是否可以switch進去，如果可以的話，返回True並且switch進去，否則返回False'''
+#注意這裡並沒有一個frame可以切換進去
+
+WebDriverWait(driver,10).until(EC.invisibility_of_element_located((By.CSS_SELECTOR,'#swfEveryCookieWrap')))
+'''判斷某個元素在是否存在於dom或不可見,如果可見返回False,不可見返回這個元素'''
+#注意#swfEveryCookieWrap在此頁面中是一個隱藏的元素
+
+WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH,"//*[@id='u1']/a[8]"))).click()
+'''判斷某個元素中是否可見並且是enable的，代表可點選'''
+driver.find_element_by_xpath("//*[@id='wrapper']/div[6]/a[1]").click()
+#WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH,"//*[@id='wrapper']/div[6]/a[1]"))).click()
+
+#WebDriverWait(driver,10).until(EC.staleness_of(driver.find_element(By.ID,'su')))
+'''等待某個元素從dom樹中移除'''
+#這裡沒有找到合適的例子
+
+WebDriverWait(driver,10).until(EC.element_to_be_selected(driver.find_element(By.XPATH,"//*[@id='nr']/option[1]")))
+'''判斷某個元素是否被選中了,一般用在下拉列表'''
+
+WebDriverWait(driver,10).until(EC.element_selection_state_to_be(driver.find_element(By.XPATH,"//*[@id='nr']/option[1]"),True))
+'''判斷某個元素的選中狀態是否符合預期'''
+
+WebDriverWait(driver,10).until(EC.element_located_selection_state_to_be((By.XPATH,"//*[@id='nr']/option[1]"),True))
+'''判斷某個元素的選中狀態是否符合預期'''
+driver.find_element_by_xpath(".//*[@id='gxszButton']/a[1]").click()
+
+instance = WebDriverWait(driver,10).until(EC.alert_is_present())
+'''判斷頁面上是否存在alert,如果有就切換到alert並返回alert的內容'''
+print instance.text
+instance.accept()
+
+driver.close()
