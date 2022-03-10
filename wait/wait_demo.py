@@ -24,3 +24,6 @@ WebDriverWait(driver,10).until(EC.visibility_of_element_located(baidu_input))
 # 直接抓取 element
 element=WebDriverWait(driver,30).until(EC.element_to_be_clickable((By.ID,'q1A')))
 element.click()
+
+element =WebDriverWait(driver, 60).until(visibility_of_element_located((By.CSS_SELECTOR, ".my-sokrates-menu")))
+element.click()
