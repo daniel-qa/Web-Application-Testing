@@ -17,3 +17,8 @@ contains：獲取包含指定文本的DOM元素
 type：在DOM元素中鍵入的內容
 click：單擊操作
 should: 斷言
+
+
+
+# DOM Selector
+cy.xpath('xxxx').click()
