@@ -5,3 +5,15 @@ npx cypress open
 // Command  Line
 
 npx cypress run --spec "cypress/integration/search.spec.js"  //直接運行search.spec.js
+
+
+
+// Basic Command
+
+beforeEach：在每個測試function都會執行
+visit：顧名思義，就是訪問遠程URL，跟 cypress.json 文件中的baseURL組合使用；
+get：通過selectors或者別名，獲取一個或者多個Dom元素
+contains：獲取包含指定文本的DOM元素
+type：在DOM元素中鍵入的內容
+click：單擊操作
+should: 斷言
