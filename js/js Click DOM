@@ -3,5 +3,10 @@
 <script>
 function myFunction() {
   document.getElementById("myCheck").click();
+  
+  console.log( getElementByXpath("//html[1]/body[1]/div[1]"));
+  
 }
 </script>
+
+
