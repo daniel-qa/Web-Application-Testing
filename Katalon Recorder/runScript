@@ -1,3 +1,5 @@
 runScript | window.scrollTo(0, 4000); |
 runScript | return window.$.fn.jquery | jQueryVersion
 echo | ${jQueryVersion} |
+echo | 執行 js element click 
+runScript | document.getElementById("no-print").click(); 
