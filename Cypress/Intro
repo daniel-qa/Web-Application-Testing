@@ -22,3 +22,8 @@ should: 斷言
 
 # DOM Selector
 cy.xpath('xxxx').click()
+
+# Type
+cy.get('.action-email')
+      .type('fake@email.com')
+      .should('have.value', 'fake@email.com')
