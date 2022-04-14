@@ -7,7 +7,6 @@ npx cypress run  // 全部執行
 npx cypress run --spec "cypress/integration/search.spec.js"  //直接運行search.spec.js
 
 
-
 // Basic Command
 
 beforeEach：在每個測試function都會執行
