@@ -3,7 +3,7 @@
 npx cypress open
 
 // Command  Line
-
+npx cypress run  // 全部執行 
 npx cypress run --spec "cypress/integration/search.spec.js"  //直接運行search.spec.js
 
 
