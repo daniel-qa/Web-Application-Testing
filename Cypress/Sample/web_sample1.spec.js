@@ -9,6 +9,7 @@ describe('入校老師新建個人班級', () => {
 	cy.get('#tmdID').type('guest')
 	cy.get('#tmdpw').type('xxxx')
 	cy.get('.iconFrame').click()
+	cy.wait(1000)
   })
   
   it('Visits 學生管理', () => {
