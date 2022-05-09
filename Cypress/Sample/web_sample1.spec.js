@@ -3,17 +3,18 @@
 
 //Step 1: Login 
 describe('入校老師新建個人班級', () => {
-  it('Login', () => {
-    cy.visit('https://www.teammodel.net')
-	cy.get(':nth-child(2) > .login-box-cont > .main > .subtitle').click()
-	cy.get('#tmdID').type('guest')
-	cy.get('#tmdpw').type('xxxx')
-	cy.get('.iconFrame').click()
-	cy.wait(1000)
+	beforeEach(() => {
+		cy.visit('https://www.xxx')
+		cy.get(':nth-child(2) > .login-box-cont > .main > .subtitle').click()
+		cy.get('#tmdID').type('guest')
+		cy.get('#tmdpw').type('0000')
+		cy.get('.iconFrame').click()		
+		cy.get('.lock-menu-btn')
   })
   
-  it('Visits 學生管理', () => {
-    cy.visit('https://www.teammodel.net/home/studentAccount/StuMgt')
-  	cy.get(':nth-child(2) > .login-box-cont > .main > .subtitle').click()
+  it('查看個人資訊', () => {	  		
+		cy.get('.avatar').click()
+		cy.wait(1000)
+		cy.contains('sidxxxxxx')
   })
 })
