@@ -6,7 +6,14 @@ echo | 'i != 1 '  |
 endif | |
 
 
-
+##################################################################
+store | 2022/05/16 17:45  | t1
+store | 2022/05/16 17:44  | t2
+if | t1==t2
+echo | the same
+else
+echo | not the same
+endiif
 ##################################################################
 
 open | https://katalon-test.s3.amazonaws.com/demo-aut/dist/html/form.html | |
