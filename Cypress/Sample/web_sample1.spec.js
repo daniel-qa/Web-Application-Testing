@@ -24,3 +24,6 @@ describe('入校老師新建個人班級', () => {
 		  .type('fake@email.com')
 		  .should('have.value', 'fake@email.com')	
 })
+
+//  css=.exersices-content .w-e-text p
+//  文字輸入框，直接定位(type)最後的儲存元素容器，比如 <p>123</p>	
