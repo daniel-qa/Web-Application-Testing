@@ -18,6 +18,7 @@ describe('入校老師新建個人班級', () => {
 		cy.contains('sidxxxxxx')
   })
 	
+  // Just For Demo	
   it('輸入字串', () => {	  		
 		cy.get('.action-email')
 		  .type('fake@email.com')
