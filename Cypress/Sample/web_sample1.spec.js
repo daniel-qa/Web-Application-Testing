@@ -17,4 +17,9 @@ describe('入校老師新建個人班級', () => {
 		cy.wait(1000)
 		cy.contains('sidxxxxxx')
   })
+	
+  it('輸入字串', () => {	  		
+		cy.get('.action-email')
+		  .type('fake@email.com')
+		  .should('have.value', 'fake@email.com')	
 })
