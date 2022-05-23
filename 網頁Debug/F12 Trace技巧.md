@@ -1,6 +1,6 @@
 ### 按下 F12
 
-- 保留Log
+- 保留Log ( Preserve Log )
 
 - 檢視 All
 
