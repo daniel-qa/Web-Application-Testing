@@ -14,5 +14,9 @@ describe('Run Javascript Script', () => {
 			win.document.getElementsByName('btnK')[1].value = "Ganesh" 
 		});
 	})
+	
+	// document.getElementById("login").style.display = "none"; //（login为需要隐藏的页面ID）
+
+	// document.getElementById("regist").style.display = "block" //（regist为需要显示的页面ID）
 
 })
