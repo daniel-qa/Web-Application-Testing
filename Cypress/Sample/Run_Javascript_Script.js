@@ -17,6 +17,6 @@ describe('Run Javascript Script', () => {
 	
 	// document.getElementById("login").style.display = "none"; //（login为需要隐藏的页面ID）
 
-	// document.getElementById("regist").style.display = "block" //（regist为需要显示的页面ID）
+	// document.getElementById("regist").style.display = "block"; //（regist为需要显示的页面ID）
 
 })
