@@ -1,3 +1,12 @@
+# window
+```
+cy.visit('http://localhost:8080/app')
+cy.window().then((win) => {
+  // win is the remote window
+})
+```
+# jQuery
+
 ```
 $(this).hide() - hides the current element.
 
