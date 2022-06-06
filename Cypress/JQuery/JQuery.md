@@ -1,3 +1,9 @@
+```
+You can also query DOM elements with cy.$$. But Cypress.$ and cy.$$ are different.
+
+Cypress.$ refers to the jQuery function itself. You can do anything with Cypress.$ if you can do it with the jQuery function. 
+```
+
 # window
 ```
 cy.visit('http://localhost:8080/app')
