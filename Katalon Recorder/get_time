@@ -1,3 +1,14 @@
+* 利用 js 的語法，儲存時間變數
+```
+| storeEval | new Date().getHours().toString() +":"+new Date().getMinutes().toString() | time1 
+
+| echo | ${time1} |　｜
+
+```
+
+
+
+```
 | storeEval | new Date().getHours().toString() | time1
 
 | echo | ${time1} |　｜
@@ -8,7 +19,7 @@
 
 | storeEval | ${time1}${time2} | Msg 
 
-
+```
 
 
 
