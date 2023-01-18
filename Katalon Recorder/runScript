@@ -6,4 +6,4 @@ echo | 執行 js element click
 runScript | document.getElementById("no-print").click(); 
 ```
 
-https://www.w3schools.com/jsref/met_win_scrollto.asp
+* [w3c school](https://www.w3schools.com/jsref/met_win_scrollto.asp)
